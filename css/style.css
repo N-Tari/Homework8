@@ -1,5 +1,9 @@
 /* header */
 
+header {
+    /* background-color: blue; */
+}
+
 .nav_div {
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,163 @@
 }
 
 
+/* Section 1 */
+
+.s1 {
+    padding: 64px 0;
+}
+
+.s1_container {
+    max-width: 1440px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.s1_leftdiv {
+    width: 490px;
+}
+
+.s1_rightdiv {
+    width: 490px;
+
+}
+
+.s1_img {
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.s1_insidediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.s1_actiondiv {
+    background-color: #000;
+    border-radius: 32px;
+    width: 100px;
+    height: 48px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.s1_actionp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.s1_h2 {
+    font-size: 56px;
+}
+
+.s1_p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* section 2 */
+
+.section2 {
+    width: 100%;
+    background-color: #F3F3F3;
+    padding: 64px 0;
+}
+
+.s2_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 30px;
+}
+
+.s2_box {
+    width: 360px;
+}
+.s2_circlediv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.s2_h4 {
+    margin-left: 16px;
+}
+.s2_circle {
+    background-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
+
+@media (max-width: 1024px) {
+    .s1_container {
+        flex-direction: column;
+    }
+    .s1_leftdiv {
+        width: 100%;
+        margin-bottom: 68px;
+        text-align: center;
+        align-items: center;
+    }
+    .s1_rightdiv {
+        width: 100%;
+    }
+    .s1_insidediv {
+        flex-direction: column;
+    }
+    .s1_actiondiv {
+        margin-bottom: 16px;
+    }
+    .s1_h2 {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 744px) {
+    .s1_h2 {
+        font-size: 40px;
+    }
+    .s2_container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .s2_box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .s2_circlediv {
+        align-items: center;
+    }
+}
+
 
 @media (max-width: 375px) {
     .navigation {
@@ -59,5 +219,8 @@
     }
     .burger_div {
         display: block;
+    }
+    .s1_h2 {
+        font-size: 40px;
     }
 }
